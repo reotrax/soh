@@ -1,0 +1,151 @@
+@charset "utf-8";
+p,h1,h2,h3,ul,li,body {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    vertical-align: bottom;
+    border: none;
+}
+body {
+    /*明朝*/
+/*    font-family: '游明朝', "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;*/
+    /*ゴシック*/
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;    
+}
+
+/* HEADER */
+header {
+    max-width: 1000px;
+    max-height: 550px;
+    width: 100vw;
+    height: calc(100vw*0.55);
+    margin: 0 auto;
+    background: url(../img/timmyregisford_clubberia.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+/*    background-position: top;*/
+/*    background-attachment: fixed;*/
+}
+header .inner {
+    height: 50px;
+    margin: 0 auto;
+    background: #fff5;
+    overflow: hidden;
+}
+h1 {
+    float: left;
+    padding-left: 10px;
+    color: white;
+}
+#instagram {
+    float: right;
+    padding: 12px;
+}
+
+/* NAVIGATION */
+nav {
+    float: right;
+}
+nav li {
+    float: left;
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    padding: 12px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* NEWS */
+.news {
+    height: 200px;
+    position: relative;
+    background: #eee;
+    overflow: hidden;
+}
+.news h2 {
+    position: absolute;
+    max-width: 300px;
+    width: 30vw;
+    height: 200px;
+    color: white;
+    background: #F2CE60;
+    transition: all 0.3s 0s ease;
+}
+.news .bottomup {
+    float: right;
+    width: 70vw;
+    height: 200px;
+    background: #F2CE60;
+    transition: all 0.3s 0s ease;
+}
+.news .text {
+    float: right;
+    width: 75vw;
+    height: 200px;
+    background: white;
+}
+.news:hover > .bottomup {
+    width: 5vw;
+}
+.news:hover > h2 {
+    width: 15vw;    
+}
+
+/* HOUSE */
+.house {
+    height: 200px;
+    position: relative;
+    background: #eee;
+    overflow: hidden;
+}
+.house h2 {
+    position: absolute;
+    max-width: 300px;
+    width: 30vw;
+    height: 200px;
+    color: white;
+    background: #72C13A;
+    transition: all 0.3s 0s ease;
+}
+.house .bottomup {
+    float: right;
+    width: 70vw;
+    height: 200px;
+    background: #72C13A;
+    transition: all 0.3s 0s ease;
+}
+.house .text {
+    float: right;
+    width: 60vw;
+    height: 200px;
+    background: white;
+}
+.house:hover > .bottomup {
+    width: 5vw;
+}
+.house:hover > h2 {
+/*    width: 15vw;    */
+}
+
+/* FOOTER */
+footer {
+    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    font-size: 14px;
+    text-align: center;
+    background: #eee;
+}
+.copy {
+    font-size: 12px;
+}
