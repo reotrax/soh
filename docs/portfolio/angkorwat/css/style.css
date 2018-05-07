@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* 基本設定 */
+html {
+  font-size: 62.5%;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
+  margin-top: 0px;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  z-index: 9999;
+  width: 100vw;
+  height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #b0966c;
+}
+.header__inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo {
+  text-align: left;
+  position: relative;
+}
+.logo img {
+  width: 245px;
+  position: absolute;
+  top: 21px;
+  left: 0%;
+}
+
+/* グローバルナビゲーション*/
+.global-nav {
+  padding-top: 20px;
+}
+.global-nav__list::after {
+  clear: both;
+  display: block;
+}
+.global-nav__list__item {
+  float: right;
+  list-style-type: none;
+  margin-left: 30px;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  font-size: 1.4rem;
+}
+.global-nav__list__item:first-child::after {
+  clear: both;
+  display: block;
+}
+.global-nav__list a {
+  text-decoration: none;
+  position: relative;
+}
+.global-nav__list a::after {
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  width: 0%;
+  border-top: 3px solid white;
+  transition: all 0.3s 0s ease;
+}
+.global-nav__list a:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+/* メインイメージ */
+.arrow, .arrow-down__box::before, .arrow-down__box::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  top: 50%;
+  left: 50%;
+  border-top: 3px solid gray;
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: 99999;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arrow-down__box {
+  width: 50px;
+  height: 30px;
+}
+.arrow-down__box::before {
+  transform: translate(-89%) rotate(30deg);
+}
+.arrow-down__box::after {
+  transform: translate(-11%) rotate(-30deg);
+}
+.arrow-down a {
+  display: block;
+  height: 100%;
+}
+
+.arrow-image {
+  bottom: 20px;
+}
+
+.image-text-position, .main-image__title, .main-image__subtitle {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+.main-image {
+  margin-top: 60px;
+  width: 100vw;
+  height: 53vw;
+  background-image: url(../img/mainimage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: 0 60px;
+  position: relative;
+}
+.main-image__title {
+  transform: translate(-50%, -70%);
+  font-size: 8.8rem;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  letter-spacing: -2.0rem;
+}
+.main-image__subtitle {
+  transform: translate(-50%, 30%);
+  font-size: 3.6rem;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  letter-spacing: 1.0rem;
+}
+.main-image::after {
+  content: '';
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  transform: translate(-50%, 900%);
+  border-top: 2px solid #b0966c;
+}
+
+/* アンコールワットの紹介 */
+.intro {
+  /* [disabled]background-color: #9C9898; */
+  text-align: center;
+  position: relative;
+  padding-bottom: 120px;
+}
+.intro__title {
+  font-size: 2.4rem;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  padding-top: 120px;
+}
+.intro__title span {
+  position: relative;
+}
+.intro__title span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 2px solid #b0966c;
+}
+.intro__text {
+  font-size: 1.4rem;
+  line-height: 1.8em;
+  margin-top: 80px;
+}
+.intro__image {
+  width: 960px;
+  height: 200px;
+  margin: 50px auto 0;
+  background-image: url(../img/introduction.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* 歴史・記事 */
+.history {
+  /* [disabled]background-color: #6D6C6C; */
+  text-align: center;
+  background-color: #b0966c;
+  padding-bottom: 120px;
+  position: relative;
+}
+.history__title {
+  font-size: 2.4rem;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  padding-top: 120px;
+}
+.history__title span {
+  position: relative;
+}
+.history__title span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 2px solid white;
+}
+.history__list {
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.8em;
+  margin-top: 80px;
+}
+.history__list::after {
+  clear: both;
+  display: block;
+}
+.history__list__item {
+  width: 810px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+.history__list__item__text {
+  text-align: left;
+  background-color: white;
+  opacity: 0.95;
+  margin-left: 270px;
+  height: 100%;
+  display: table;
+  overflow: visible;
+}
+.history__list__item__text p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+  line-height: 1.4em;
+}
+.history__list__item:nth-of-type(even) .history__list__item__text {
+  margin-left: 0;
+  margin-right: 270px;
+}
+
+/* 記事ごとの数字 */
+.number, .one::before, .two::before, .three::before, .four::before {
+  font-size: 10.0rem;
+  font-style: italic;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  color: lightgray;
+  position: absolute;
+  top: 15%;
+  left: -12%;
+}
+
+.one {
+  background-image: url(../img/history01.jpg);
+  float: right;
+  position: relative;
+  margin-top: 0;
+}
+.one::before {
+  content: '1';
+}
+
+.two {
+  background-image: url(../img/history02.jpg);
+  background-position: center;
+  float: left;
+  position: relative;
+}
+.two::before {
+  left: 105%;
+  content: '2';
+}
+
+.three {
+  background-image: url(../img/history03.jpg);
+  float: right;
+  position: relative;
+}
+.three::before {
+  content: '3';
+}
+
+.four {
+  background-image: url(../img/history04.jpg);
+  background-position: bottom;
+  float: left;
+  position: relative;
+}
+.four::before {
+  left: 105%;
+  content: '4';
+}
+
+/* カンボジアについて */
+.cambodia {
+  /* [disabled]background-color: #353535; */
+  text-align: center;
+  padding-bottom: 120px;
+  background-color: #e5e5e5;
+  position: relative;
+}
+.cambodia__title {
+  font-size: 2.4rem;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  padding-top: 120px;
+}
+.cambodia__title span {
+  position: relative;
+}
+.cambodia__title span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 2px solid #b0966c;
+}
+.cambodia__data {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 80px;
+  overflow: hidden;
+  position: relative;
+}
+.cambodia__data__flag {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-60%);
+}
+.cambodia__data dl {
+  float: right;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+.cambodia__data dl::after {
+  clear: both;
+  display: block;
+}
+.cambodia__data dt {
+  float: left;
+  padding: 3px 0;
+  font-weight: bold;
+}
+.cambodia__data dd {
+  text-align: left;
+  padding: 3px 0;
+  padding-left: 15px;
+}
+.cambodia__data dd:last-child::after {
+  clear: both;
+  display: block;
+}
+.cambodia__data .dd_last::after {
+  clear: both;
+  display: block;
+}
+
+/* アクセス */
+.access {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.access__title {
+  font-size: 2.4rem;
+  font-family: "游明朝", "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+  padding-top: 120px;
+  padding-top: 50px;
+}
+.access__title span {
+  position: relative;
+}
+.access__title span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 2px solid #b0966c;
+}
+.access__map {
+  padding-top: 50px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #b0966c;
+  color: #e5e5e5;
+}
+footer ul {
+  margin: 0 auto;
+}
+footer li {
+  display: inline;
+  font-size: 1.4rem;
+}
+footer a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvcHJlX2F1dG9maXhlci9zdHlsZS5jc3MiLCIuLi9zYXNzL3N0eWxlLnNjc3MiLCIuLi9zYXNzL19oZWFkZXIuc2NzcyIsIi4uL3Nhc3MvX21haW4uc2NzcyIsIi4uL3Nhc3MvX2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUFpQjtBQ2lDakIsVUFBVTtBQUVWO0VBQ0ksaUJBQWdCO0NEaENuQjs7QUNtQ0Q7Ozs7Ozs7RUFPSSxVQUFTO0VBQ1QsV0FBVTtFQUNWLHNIQTNCTTtDRExUOztBQ21DRDtFQUNJLGFBQVk7RUFDWix1QkFBc0I7Q0RoQ3pCOztBQ21DRDtFQUNJLG1CQUFrQjtFQUNsQixrQkFBaUI7RUFDakIsYUFBWTtFQUNaLGdCQUFlO0NEaENsQjs7QUU1QkQ7RUFDSSxnQkFBZTtFQUNmLFFBQU87RUFDUCxjQUFhO0VBQ2IsYUFBWTtFQUNaLGFBQVk7RUFDWixtQkFBa0I7RUFDbEIsa0JBQWlCO0VBQ2pCLDBCRG9CVTtDRFdiO0FFOUJHO0VBQ0ksYUFBWTtFQUNaLGVBQWM7RUFDZCxtQkFBa0I7Q0ZnQ3pCO0FFOUJHO0VBQ0ksc0JBQXFCO0VBQ3JCLGVBQWM7Q0ZnQ3JCOztBRTVCRDtFQUNJLGlCQUFnQjtFQUNoQixtQkFBa0I7Q0YrQnJCO0FFOUJHO0VBQ0ksYUFBWTtFQUNaLG1CQUFrQjtFQUNsQixVQUFTO0VBQ1QsU0FBUTtDRmdDZjs7QUUzQkQsaUJBQWlCO0FBRWpCO0VBQ0ksa0JBQWlCO0NGNkJwQjtBQ01HO0VBQ0ksWUFBVztFQUNYLGVBQWM7Q0RKckI7QUU5Qk87RUFDSSxhQUFZO0VBQ1osc0JBQXFCO0VBQ3JCLGtCQUFpQjtFQUNqQiwwRkRmUDtFQ2dCTyxrQkRwQ0c7Q0RvRWQ7QUNMRztFQUNJLFlBQVc7RUFDWCxlQUFjO0NET3JCO0FFL0JPO0VBQ0ksc0JBQXFCO0VBQ3JCLG1CQUFrQjtDRmlDN0I7QUVoQ1c7RUFDSSxZQUFXO0VBQ1gsbUJBQWtCO0VBQ2xCLGNBQWE7RUFDYixVQUFT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 */
