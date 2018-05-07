@@ -1,66 +1,261 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <meta name="keywords" content="">
-        <link href="css/soh.css" rel="stylesheet" type="text/css">
-        <title>SOH</title>
-    </head>
-    
-    <body>
-        <header>
-            <div class="inner">
-                <h1>Spinning Of History</h1>
-                <p id="instagram">instagram</p>
-                <nav>
-                    <ul>
-                        <li><p><a href="#">トップ</a></p></li>
-                        <li><p><a href="#">ハウスミュージック</a></p></li>
-                        <li><p><a href="#">アーティスト</a></p></li>
-                        <li><p><a href="#">レーベル</a></p></li>
-                    </ul>
-                </nav>
+
+<head>
+    <!-- 対策編-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO編-->
+    <title>Portfolio | TOP</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="サイトのタイトル | ページ詳細. 120字以内に収める。最初の40字は大事。ページごとにそのページの詳細を記載する。">
+    <meta name="author" content="製作者の名前or会社名">
+    <link rel="canonical" href="正規のURLを検索エンジンにしめす。">
+
+    <!-- OGP編-->
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="ogpのタイトル. <title>と文章も文字数も同じにする。">
+    <meta property="og:description" content="ogpの本文。<meta name='description'>と同じにする。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="サイトのURL貼る">
+    <meta property="og:image" content="ogpのURL貼る">
+    <meta property="fb:app_id" content="App-ID（15文字の半角数字）" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="サイトのURL貼る">
+    <meta name="twitter:image" content="ogpのURL貼る">
+
+    <!-- favicon編-->
+    <link rel="icon" type="image/x-icon" href="">
+
+    <!-- Web Clip編-->
+    <link rel="apple-touch-icon" href="Web Clip用のアイコンURL貼る">
+    <link rel="apple-touch-icon" sizes="57x57" href="iPhone 3G">
+    <link rel="apple-touch-icon" sizes="72x72" href="非Retina版のiPad 2、iPad miniの用、iOS 6以前">
+    <link rel="apple-touch-icon" sizes="76x76" href="非Retina版のiPad 2、iPad miniの用、iOS 7以降">
+    <link rel="apple-touch-icon" sizes="114x114" href="Retina版のiPhone、iPod touch用、iOS 6以前">
+    <link rel="apple-touch-icon" sizes="120x120" href="Retina版のiPhone、iPod touch用、iOS 7以降">
+    <link rel="apple-touch-icon" sizes="144x144" href="Retina版のiPad、iPad mini用、iOS 6以前">
+    <link rel="apple-touch-icon" sizes="152x152" href="Retina版のiPad、iPad mini用、iOS 7以降">
+    <link rel="apple-touch-icon" sizes="180x180" href="iPhone 6 plus">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <div class="header__inner">
+
+            <nav class="global-nav">
+                <ul>
+                    <li class="global-nav__item"><a href="#header">TOP</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#introduction">INTRODUCTION</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="wellcome"></div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <div class="main-image" id="main-image">
+        </div>
+
+
+        <!-- INTRODUCTION -->
+        <section class="introduction" id="introduction">
+
+            <div class="introduction__inner">
+
+                <h2 class="introduction__title">
+                    <img src="img/title_intro.png">
+                </h2>
+
+                <p class="introduction__text">
+                    1979年生まれ。東京都出身。<br> 2014年まではIT関連ではない仕事に就いていましたが、
+                    <br> 将来について考える上で、自分にとって「ものづくり」が大切だという気持ちが大きくなり、
+                    <br> 退職して卒業訓練校でJava/Androidアプリ開発を学習しました。
+                    <br> ここで、Google Play Storeでのリリースまでを経験。
+                    <br> 2015年から、AWSを利用したデータ分析基盤の構築や保守作業を担当しました。
+                    <br> ITの基本を中心に、Java / Pythonなどの理解を深めましたが、<br> ものづくりに近づくために2017年に退職。
+                    <br> 卒業訓練校のWebクリエーター科でHTML/CSS/Photoshopなどを学習しながら、
+                    <br> 独学でも、JavaScript / Sass / CSS設計（OOCSS、BEM）などについて学習しました。
+                    <br> 現在、コーディングとデザインをどちらもできるWEBクリエーターを目指しています。
+                </p>
+
             </div>
-        </header>
-        
-        <main>
-            
-            <section class="news">
-                <div class="bottomup"></div>
-                <div class="text">
-                    <p class="news1"><a href="#">1</a></p>
-                    <p class="news2"><a href="#">2</a></p>
-                    <p class="news3"><a href="#">3</a></p>
-                    <p class="news4"><a href="#">4</a></p>
-                    <p class="news5"><a href="#">2018/03/09  ホームページを開設しました。</a></p>
+
+        </section>
+
+
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio" id="portfolio">
+
+            <div class="portfolio__inner">
+
+                <h2 class="portfolio__title">
+                    <img src="img/title_portfolio.png">
+                </h2>
+
+
+                <div class="portfolio__item first">
+
+                    <a href="/portfolio/cafe/index.html" target="_blank">
+
+                        <h3 class="portfolio__item__title"><span>カフェ</span></h3>
+
+                        <p class="portfolio__item__image">
+                            <img src="img/portfolio_coffeeshop.png" alt="コーヒーショップ">
+                        </p>
+
+                        <div class="portfolio__item__intro">
+                            <p>
+                                コーディング：5.5時間
+                            </p>
+                            <p>
+                                有名カフェを土台に制作。既存店舗のイメージに合う様に、お洒落さよりも敷居の低さを感じられるデザインを目指した。
+                            </p>
+                        </div>
+
+                    </a>
+
                 </div>
-                <h2>NEWS</h2>
-            </section>
-            
-            <section class="house">
-                <div class="bottomup"></div>
-                <div class="text">
-                    <p class="news1"><a href="#"></a></p>
-                    <p class="news2"><a href="#"></a></p>
-                    <p class="news3"><a href="#"></a></p>
-                    <p class="news4"><a href="#"></a></p>
-                    <p class="news5"><a href="#">2018/03/09  ホームページを開設しました。</a></p>
+
+
+                <div class="portfolio__item second">
+                    <a href="/portfolio/angkorwat/index.html" target="_blank">
+
+                        <h3 class="portfolio__item__title">
+                            世界遺産を見に行こう　アンコールワット
+                        </h3>
+
+                        <p class="portfolio__item__image">
+                            <img src="img/portfolio_angkorwat.png" alt="世界遺産を見に行こう　アンコールワット">
+                        </p>
+
+                        <div class="portfolio__item__intro">
+                            <p>
+                                コーディング：5.0時間
+                            </p>
+                            <p>
+                                職業訓練校の課題としてデザインカンプから制作。
+                                <br>寺院の神秘性、気品をイメージ。
+                                <br>ヘッダーのロゴは、連載記事というイメージで「世界遺産」風。
+                            </p>
+                        </div>
+
+                    </a>
                 </div>
-                <h2>HOUSE</h2>
-            </section>
-            
-        </main>
 
-        <footer>
-            <p>SOH | ハウスミュージック | アーティスト | レーベル | instagram</p>
-            <p class="copy"><a href="#">プライバシーポリシー</a>　　<a href="#">利用規約</a><br>2018 &copy; All Rights Reserved.</p>
-        </footer>
 
-        <script>
-        </script>
+                <div class="portfolio__item third">
+                    <a href="/portfolio/ability5/index.html" target="_blank">
 
-    </body>
-</html>
+                        <h3 class="portfolio__item__title">高層マンション Ability5</h3>
+
+                        <p class="portfolio__item__image">
+                            <img src="img/portfolio_ability5.png" alt="高層マンション ability5">
+                        </p>
+
+                        <div class="portfolio__item__intro">
+                            <p>
+                                スライス、コーディング：3.5時間
+                            </p>
+                            <p>
+                                職業訓練校での課題でデザインカンプが用意されており、画像の出力などを含めて進めた。少しでも読み込みを早くするために不要な画像を使わないようにしていた。
+                            </p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="contact" id="contact">
+
+            <div class="contact__inner">
+
+                <h2 class="contact__title">
+                    <img src="img/title_contact.png">
+                </h2>
+
+                <p class="contact__text">お仕事のご依頼はこちらから。</p>
+
+                <div class="contact__send-mail" id="contact__send-mail">
+                    <p class="contact__send-mail__text">send mail</p>
+                </div>
+
+                <div class="contact__form" id="contact__form">
+                    <p>お名前</p>
+                    <input type="text" name="name" size="40">
+                    <p>メールアドレス</p>
+                    <input type="text" name="mail" size="40">
+                    <p>ご依頼の種類</p>
+                    <input type="radio" name="genre" size="40">デザイン
+                    <input type="radio" name="genre" size="40">コーディング
+                    <input type="radio" name="genre" size="40">両方
+                    <input type="radio" name="genre" size="40">その他
+                    <p>ご依頼内容</p>
+                    <input type="text" name="text" size="40">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer" id="footer">
+
+        <div class="footer__inner">
+
+            <nav class="global-nav">
+                <ul>
+                    <li class="global-nav__item"><a href="#header">TOP</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#introduction">INTRODUCTION</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li>/</li>
+                    <li class="global-nav__item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <p class="footer__copyright">2018 &copy; All Rights Reserved.</p>
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- JS -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/top.js"></script>
+</body>
